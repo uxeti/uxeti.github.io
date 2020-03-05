@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Tally Counter</title>
+    <link rel="stylesheet" href="tally-counter-layout.css" />
+    <link rel="stylesheet" href="tally-counter-color.css" />
+    <script src="tally-counter.js"></script>
+</head>
+<body>
+    <tally-counter-container>
+        <tally-counter id="template">
+            <tally-counter-contents>
+                <tally-counter-title-bar>
+                    <input class="tally-counter-name" />
+                    <button class="tally-counter-close-button">x</button>
+                </tally-counter-title-bar>
+                <input class="tally-counter-display" value="0" />
+                <tally-counter-buttons-row>
+                    <button class="tally-counter-subtract-button">-</button>
+                    <button class="tally-counter-add-button">+</button>
+                </tally-counter-buttons-row>
+                <button class="tally-counter-reset-button">Reset</button>
+            </tally-counter-contents>
+        </tally-counter>
+        <new-counter-button-container>
+            <button id="add-a-new-counter-button">New counter</button>
+        </new-counter-button-container>
+    </tally-counter-container>
+</body>
+</html>

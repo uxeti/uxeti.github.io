@@ -1,0 +1,115 @@
+﻿:root {
+    --container-border-radius: 8px;
+    --tally-counter-width: 120px;
+    --tally-counter-height: 180px;
+    --tally-counter-margin: 2px;
+}
+
+input, button {
+    outline-width: 0px;
+    border-width: 0px;
+    margin: 0px;
+}
+
+tally-counter-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+new-counter-button-container {
+    width: var(--tally-counter-width);
+    height: var(--tally-counter-height);
+    vertical-align: bottom;
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: var(--container-border-radius);
+    margin: var(--tally-counter-margin);
+}
+
+#add-a-new-counter-button {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--container-border-radius);
+}
+
+#template {
+    display: none;
+}
+
+tally-counter {
+    width: var(--tally-counter-width);
+    height: var(--tally-counter-height);
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: var(--container-border-radius);
+    margin: var(--tally-counter-margin);
+}
+
+tally-counter-contents {
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    width: 100%;
+    height: 100%;
+}
+
+tally-counter-title-bar {
+    display: grid;
+    grid-template-columns: 1fr 2ch;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+
+.tally-counter-name {
+    margin: 0px;
+    padding: 0px 1ch;
+    min-width: 0px;
+}
+
+.tally-counter-close-button {
+    border-top-right-radius: var(--container-border-radius);
+    text-align: center;
+    cursor: default;
+    user-select: none;
+}
+
+.tally-counter-display {
+    min-width: 0px;
+    text-align: center;
+    font-size: 50px;
+}
+
+tally-counter-buttons-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 4px;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+
+    tally-counter-buttons-row > button {
+        border-radius: 8px;
+        box-sizing: border-box;
+        height: 2em;
+    }
+
+.tally-counter-subtract-button {
+    margin-left: 4px;
+    margin-right: 1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.tally-counter-add-button {
+    margin-left: 1px;
+    margin-right: 4px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.tally-counter-reset-button {
+    border-bottom-left-radius: var(--container-border-radius);
+    border-bottom-right-radius: var(--container-border-radius);
+}

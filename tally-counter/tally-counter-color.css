@@ -1,0 +1,36 @@
+﻿:root {
+    --container-border-color: #ddd;
+    --close-button-background-color: #eee;
+}
+
+input {
+    background-color: transparent;
+}
+
+button {
+    background-color: #eee;
+}
+
+    button:active {
+        background: #ddd;
+    }
+
+new-counter-button-container {
+    border-color: var(--container-border-color)
+}
+
+tally-counter {
+    border-color: var(--container-border-color)
+}
+
+tally-counter-title-bar {
+    border-color: var(--container-border-color)
+}
+
+tally-counter-close-button {
+    background-color: var(--close-button-background-color);
+}
+
+tally-counter-buttons-row {
+    border-color: var(--container-border-color)
+}
