@@ -15,11 +15,16 @@ button {
         background: #ddd;
     }
 
+body {
+    background-color: #fcfcfc;
+}
+
 new-counter-button-container {
     border-color: var(--container-border-color)
 }
 
 tally-counter {
+    background-color: #fff;
     border-color: var(--container-border-color)
 }
 
